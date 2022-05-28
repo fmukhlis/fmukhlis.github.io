@@ -1,0 +1,11 @@
+section#jumbotron, section#portfolio {
+    background-color: #ccc;
+}
+section {
+    padding-top: 6rem;
+    min-height: 400px;
+}
+section#portfolio img{
+    width: 100%;
+    height: 250px;
+}
