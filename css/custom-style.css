@@ -2,7 +2,7 @@ section#jumbotron, section#portfolio {
     background-color: #ccc;
 }
 section {
-    padding-top: 6rem;
+    padding-top: 2rem;
     min-height: 400px;
 }
 section#portfolio img{
