@@ -1,11 +1,74 @@
-section#jumbotron, section#portfolio {
-    background-color: #ccc;
-}
-section {
-    padding-top: 2rem;
-    min-height: 400px;
-}
-section#portfolio img{
-    width: 100%;
-    height: 250px;
-}
+/* Mengatur Warna Background Section */
+    section#jumbotron, section#portfolio {
+        background-color: #ccc;
+    }
+/* END */
+
+/* Mengatur Ukuran dan Properti Lain Setiap Elemen Pada Jumbotron */
+    section#jumbotron {
+        padding: 4rem 2rem 1rem 2rem;
+        background-image: url('../img/bg-webdev-by-daduweb.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0 180px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+        overflow: hidden;
+    }
+    section#jumbotron img{
+        width: 250px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    }
+/* END */
+
+/* Mengatur Padding Top Default Setiap Section */
+    section#about, section#portfolio, section#contact {
+        padding-top: 2rem;
+    }
+/* END */
+
+/* Menyembunyikan Content Setiap Section Dan Mengatur Efek Transisinya */
+    section .sectionContent{
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 3.5s ease-out;
+    }
+    section .sectionContent.triggered{
+        max-height: 1500px;
+    }
+/* END */
+
+/* Mengatur Landing Element Untuk Content Pada Section About */
+    section#about .about1, section#about .about2{
+        opacity: 0;
+        transition: 0.7s ease-out;
+    }
+    section#about .about1 {
+        transform: translate(0, -50px);
+    }
+    section#about .about2 {
+        transform: translate(0, 50px);
+    }
+    section#about .about1.triggered, section#about .about2.triggered{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+/* END */
+
+/* Mengatur Ukuran Gambar Portfolio */
+    section#portfolio img {
+        width: 100%;
+        height: 250px;
+    }
+/* END */
+
+/* Mengatur Landing Element Untuk Content Pada Section Portfolio */
+    section#portfolio .img-thumbnail {
+        opacity: 0;
+        transform: translate(0, -50px);
+        transition: 0.3s ease-out;
+    }
+    section#portfolio .img-thumbnail.triggered {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+/* END */
