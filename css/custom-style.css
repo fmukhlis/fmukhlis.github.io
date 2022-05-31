@@ -1,7 +1,7 @@
 /* Mengatur Warna Background Section */
-    section#jumbotron, section#portfolio {
+    /* section#jumbotron, section#portfolio {
         background-color: #ccc;
-    }
+    } */
 /* END */
 
 /* Mengatur Ukuran dan Properti Lain Setiap Elemen Pada Jumbotron */
@@ -9,8 +9,8 @@
         padding: 4rem 2rem 1rem 2rem;
         background-image: url('../img/bg-webdev-by-daduweb.png');
         background-attachment: fixed;
-        background-size: cover;
-        background-position: 0 180px;
+        background-size: contain;
+        background-position: center;
         text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
         overflow: hidden;
     }
