@@ -19,10 +19,8 @@ document.querySelector('section#testimonial').addEventListener("click", function
             elementFocusLost.parentElement.insertBefore(e.target, elementFocusLost)
             parentElementFocusGained.insertBefore(elementFocusLost, parentElementFocusGained.children[0]);
             document.querySelector('section#testimonial').classList.remove('focusChanged');
-        }, 300);
-        setTimeout(function(){
             e.target.classList.add('active');
-        }, 320);
+        }, 300);
     }
 });   
 
