@@ -1,62 +1,29 @@
 let userView = window.innerHeight * 0.70;
 
 document.addEventListener("DOMContentLoaded", initialize);
-window.addEventListener("scroll", function(){
-    let y = this.scrollY;
-    let scrollSpeedJumbotronImg = (y * 0.22) + '%';
-    let scrollSpeedJumbotronH1 = (y * 1.2) + '%';
-    let scrollSpeedJumbotronP = (y * 2) + '%';
-    this.document.querySelector('section#jumbotron img').style.transform = 'translateY('+ scrollSpeedJumbotronImg +')';
-    this.document.querySelector('section#jumbotron h1').style.transform = 'translateY('+ scrollSpeedJumbotronH1 +')';
-    this.document.querySelector('section#jumbotron p').style.transform = 'translateY('+ scrollSpeedJumbotronP +')';
+document.querySelector('section#testimonial').addEventListener("click", function(e){
+    if (e.target.classList.contains('figure-img')){
+        if (e.target.classList.contains('active')) return
 
-    if (y >= this.document.querySelector('section#about').offsetTop - userView){
-        this.document.querySelector('section#about').firstElementChild.lastElementChild.classList.add('triggered');
-        this.setTimeout(function(){
-            this.document.querySelector('section#about .about1').classList.add('triggered');
-            this.document.querySelector('section#about .about2').classList.add('triggered');
-        }, 400);
-    }
-    if (y >= this.document.querySelector('section#portfolio').offsetTop - userView){
-        this.document.querySelector('section#portfolio').firstElementChild.lastElementChild.classList.add('triggered');
-        this.setTimeout(function(){
-            this.document.querySelectorAll('section#portfolio .img-thumbnail').forEach(function(item, index){
-                setTimeout(function(){
-                    item.classList.add('triggered');
-                }, (index * 200));
-            });
-        }, 400);
-    }
-    if (y >= this.document.querySelector('section#contact').offsetTop - userView){
-        this.setTimeout(function(){
-            document.querySelector('section#contact').firstElementChild.lastElementChild.classList.add('triggered');
-        }, 400);
+        document.querySelector('section#testimonial').classList.add('focusChanged');
+        setTimeout(function(){
+            let elementFocusLost = '';
+            const parentElementFocusGained = e.target.parentElement;
+            const allTargetElement = e.target.parentElement.parentElement.children;
+            for(let item = 0; item < allTargetElement.length; item++){
+                if (allTargetElement[item].firstElementChild.classList.contains('active')){
+                    elementFocusLost = allTargetElement[item].firstElementChild;
+                }
+                allTargetElement[item].firstElementChild.classList.remove('active');
+            }
+            elementFocusLost.parentElement.insertBefore(e.target, elementFocusLost)
+            parentElementFocusGained.insertBefore(elementFocusLost, parentElementFocusGained.children[0]);
+            document.querySelector('section#testimonial').classList.remove('focusChanged');
+            e.target.classList.add('active');
+        }, 300);
     }
 });   
 
 function initialize(){    
-    if (userView >= this.querySelector('section#about').offsetTop){
-        this.querySelector('section#about').firstElementChild.lastElementChild.classList.add('triggered');
-        window.setTimeout(function(){
-            document.querySelector('section#about .about1').classList.add('triggered');
-            document.querySelector('section#about .about2').classList.add('triggered');
-        }, 400);
-    }
-    if (userView >= document.querySelector('section#portfolio').offsetTop){
-        window.setTimeout(function(){
-            document.querySelector('section#portfolio').firstElementChild.lastElementChild.classList.add('triggered');
-            window.setTimeout(function(){
-                document.querySelectorAll('section#portfolio .img-thumbnail').forEach(function(item, index){
-                    setTimeout(function(){
-                        item.classList.add('triggered');
-                    }, (index * 200));
-                });
-            }, 400);
-        }, 1000);
-    }
-    if (userView >= document.querySelector('section#contact').offsetTop){
-        window.setTimeout(function(){
-            document.querySelector('section#contact').firstElementChild.lastElementChild.classList.add('triggered');
-        }, 2400);
-    }
+    let x = this.scrollX;
 }
