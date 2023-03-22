@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06270d5e.css",
+    "main.js": "/static/js/main.be234758.js",
+    "static/js/787.86b5e812.chunk.js": "/static/js/787.86b5e812.chunk.js",
+    "static/media/image 12.png": "/static/media/image 12.4dcb2224d553ccd977a4.png",
+    "static/media/FajarMukhlisI.jpeg": "/static/media/FajarMukhlisI.927d11a7708c1b45654f.jpeg",
+    "static/media/mountain-bike 1.png": "/static/media/mountain-bike 1.4a10cddcb175d2ec7128.png",
+    "static/media/memeImage.jpg": "/static/media/memeImage.181b30d8fe8dee5cb408.jpg",
+    "static/media/image 23.png": "/static/media/image 23.2e772098555277ef9b79.png",
+    "static/media/image 27.png": "/static/media/image 27.a2ac2bca67e3993b566c.png",
+    "static/media/image 24.png": "/static/media/image 24.de389401b3859eff0451.png",
+    "static/media/image 26.png": "/static/media/image 26.0f0ffdf0fbe6db661ad3.png",
+    "static/media/image 22.png": "/static/media/image 22.8e46b7da695e24a20cb0.png",
+    "static/media/image 29.png": "/static/media/image 29.aa16e87b556b89e980d4.png",
+    "static/media/image 28.png": "/static/media/image 28.810ea96e6b24b4580e0b.png",
+    "static/media/image 30.png": "/static/media/image 30.5a0494146368c6f5bf83.png",
+    "static/media/image 25.png": "/static/media/image 25.d8ead139f91c6ed881a1.png",
+    "index.html": "/index.html",
+    "main.06270d5e.css.map": "/static/css/main.06270d5e.css.map",
+    "main.be234758.js.map": "/static/js/main.be234758.js.map",
+    "787.86b5e812.chunk.js.map": "/static/js/787.86b5e812.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06270d5e.css",
+    "static/js/main.be234758.js"
+  ]
+}
