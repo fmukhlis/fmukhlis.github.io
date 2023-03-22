@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.06270d5e.css",
-    "main.js": "/static/js/main.be234758.js",
+    "main.js": "/static/js/main.dbbb3cb8.js",
     "static/js/787.86b5e812.chunk.js": "/static/js/787.86b5e812.chunk.js",
     "static/media/image 12.png": "/static/media/image 12.4dcb2224d553ccd977a4.png",
     "static/media/FajarMukhlisI.jpeg": "/static/media/FajarMukhlisI.927d11a7708c1b45654f.jpeg",
@@ -18,11 +18,11 @@
     "static/media/image 25.png": "/static/media/image 25.d8ead139f91c6ed881a1.png",
     "index.html": "/index.html",
     "main.06270d5e.css.map": "/static/css/main.06270d5e.css.map",
-    "main.be234758.js.map": "/static/js/main.be234758.js.map",
+    "main.dbbb3cb8.js.map": "/static/js/main.dbbb3cb8.js.map",
     "787.86b5e812.chunk.js.map": "/static/js/787.86b5e812.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06270d5e.css",
-    "static/js/main.be234758.js"
+    "static/js/main.dbbb3cb8.js"
   ]
 }
