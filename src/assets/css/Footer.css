@@ -1,0 +1,23 @@
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.bg-super-dark {
+  background-color: #0e1013;
+}
+
+.fs-lg {
+  font-size: 1.5rem;
+}
+
+.text-secondary {
+  color: slategray;
+}

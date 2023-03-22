@@ -1,0 +1,34 @@
+.hero-img-1 {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  width: 72px;
+  height: 96px;
+}
+
+.hero-img-2 {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  width: 73px;
+  height: 63px;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mt-5 {
+  margin-top: 2rem;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.w-def {
+  width: 550px;
+}
+
+.w-75 {
+  width: 75%;
+}
