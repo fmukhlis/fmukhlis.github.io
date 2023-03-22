@@ -5,9 +5,6 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 
 const Card = (props) => {
-    React.useEffect(() => {
-        document.title = props.docTitle
-    }, [])
 
     const coverImg = props.coverImg ? require('../assets/images/' + props.coverImg) : 'https://source.unsplash.com/300x400?programmer'
     const badgeText = props.location !== 'OFFLINE' 

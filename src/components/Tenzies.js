@@ -59,7 +59,8 @@ const Tenzies = (props) => {
 
     React.useEffect(() => {
         const isAllEquals = currentDices.every(dice => dice.value === currentDices[0].value)
-        isAllEquals && setGameStats((prevGameStats) => ({...prevGameStats, status: 'Finished'}))
+        const isAllFrozen = currentDices.every(dice => dice.isMutable === false)
+        isAllFrozen && isAllEquals && setGameStats((prevGameStats) => ({...prevGameStats, status: 'Finished'}))
     }, [currentDices])
 
     return (
